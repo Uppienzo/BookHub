@@ -1,0 +1,70 @@
+.book-container {
+  width: 100%;
+  display: flex;
+}
+.book-cover-main-image {
+  height: 190px;
+  width: 150px;
+  border-radius: 8px;
+}
+.book-details-container {
+  padding: 0px 10px;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: roboto;
+}
+
+.book-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #334155;
+}
+.book-author-name {
+  font-weight: 500;
+  font-size: 15px;
+}
+.book-rating {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.star-icon-main {
+  color: #fbbf24;
+  border-radius: 1px;
+  margin: 0px 5px 0px 12px;
+}
+.rating-number {
+  font-size: 14px;
+}
+.book-status {
+  font-size: 12px;
+}
+.book-status-highlight {
+  font-size: 12px;
+  color: #0284c7;
+}
+.styled-link-book-item {
+  min-width: 320px;
+  text-decoration: none;
+  color: inherit;
+  width: 40%;
+  margin: 0px 25px 25px 0px;
+}
+
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 767px) {
+  .styled-link-book-item {
+    width: 100%;
+  }
+  .book-container {
+    width: 100%;
+    padding: 8px 15px;
+  }
+
+  .book-details-container {
+    align-self: center;
+  }
+}

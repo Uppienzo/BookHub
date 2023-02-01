@@ -1,0 +1,30 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  color: #3d3c3c;
+  font-weight: 600;
+  font-family: Font Awesome 5 Brands;
+}
+.footer-icons {
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-contact {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    font-weight: 400;
+    font-size: 13.7143px;
+  }
+  .footer-icons {
+    width: 120px;
+  }
+}

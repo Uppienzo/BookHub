@@ -1,0 +1,41 @@
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: roboto;
+  margin: 60px 0px;
+}
+.failure-image {
+  height: 200px;
+}
+.failure-text {
+  color: #475569;
+  font-weight: 500;
+  font-size: 22px;
+}
+.failure-retry-button {
+  font-weight: 500;
+  font-size: 12px;
+  background: #0284c7;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border-width: 0px;
+  color: #ffffff;
+  font-family: roboto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .failure-container {
+    min-width: 350px;
+  }
+  .failure-image {
+    height: 100px;
+  }
+  .failure-text {
+    font-size: 12px;
+  }
+  .failure-retry-button {
+    font-size: 9.33333px;
+  }
+}

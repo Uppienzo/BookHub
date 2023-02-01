@@ -1,0 +1,151 @@
+body {
+  margin: 0px;
+}
+
+.book-shelves-main-container {
+  width: 100vw;
+  border: 2px solid transparent;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+.books-shelves-body-container {
+  width: 88%;
+  display: flex;
+  margin: 30px auto;
+}
+.shelves-main-container {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  margin: 10px;
+}
+.selves-container {
+  list-style-type: none;
+  padding-left: 0px;
+  font-family: roboto;
+}
+
+.selves-head {
+  font-family: roboto;
+  font-weight: 600;
+  font-size: 20px;
+  color: #334155;
+  margin-bottom: 30px;
+}
+.book-shelves-head-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.books-result-container {
+  width: 100%;
+  margin: 0px 10px;
+}
+.books-search-container {
+  background: #edeff1;
+  height: 35px;
+  padding: 0px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}
+
+.books-type-head {
+  color: #334155;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: roboto;
+}
+.search-input {
+  background-color: #ffffff;
+  height: 100%;
+  border-width: 0px;
+  padding: 10px;
+  margin: 0px 10px 0px 0px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.search-icon-button {
+  border-width: 0px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.books-list {
+  min-height: 50vh;
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.no-videos-container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no-books-image {
+  height: 240px;
+}
+.no-videos-description {
+  color: #334155;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .book-shelves-main-container {
+    min-width: 350px;
+    width: 100%;
+  }
+  .books-result-container {
+    margin: 0px;
+  }
+  .shelves-main-container {
+    width: auto;
+    background-color: transparent;
+    margin-bottom: -50px;
+    margin-top: 30px;
+  }
+  .book-shelves-head-container {
+    width: 90%;
+    position: absolute;
+    top: 50px;
+    left: 12px;
+    height: 100px;
+  }
+  .books-type-head {
+    display: none;
+  }
+
+  .selves-head {
+    font-size: 16px;
+    margin: 0px 0px;
+  }
+  .selves-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .books-shelves-body-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .books-list {
+    width: 100%;
+    flex-direction: column;
+  }
+  .no-books-image {
+    height: 175px;
+  }
+  .no-videos-description {
+    font-size: 16px;
+    text-align: center;
+    margin: 15px;
+  }
+}

@@ -1,0 +1,128 @@
+.book-details-main-container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+.book-details-card {
+  background-color: #ffffff;
+  width: 85%;
+  margin: 60px auto;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 0.5px #e6e6e6;
+}
+.book-profile-description * {
+  margin: 5px auto;
+}
+
+.book-profile-container {
+  width: fit-content;
+  margin: 0px auto;
+}
+.book-cover-image {
+  height: 250px;
+  width: 200px;
+  border-radius: 15px;
+}
+.book-profile-description {
+  padding: 0px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-profile-container {
+  font-family: roboto;
+  display: flex;
+}
+.book-profile-title {
+  color: #334155;
+  font-weight: 600;
+  font-size: 32px;
+}
+.book-profile-author-name,
+.book-profile-rating,
+.book-profile-status {
+  font-weight: 500;
+  font-size: 24px;
+  color: #475569;
+}
+.book-profile-rating {
+  display: flex;
+  align-items: center;
+}
+.star-icon {
+  color: #fbbf24;
+}
+.rating-profile-number {
+  font-weight: 400;
+  font-size: 24px;
+  color: #334155;
+}
+.star-icon {
+  margin: 0px 8px 0px 20px;
+}
+.book-profile-status-highlight {
+  color: #0284c7;
+  font-weight: 500;
+  font-size: 24px;
+}
+.horizontal-line {
+  margin: 30px 0px;
+}
+
+.book-description-head {
+  font-weight: 600;
+  font-size: 24px;
+  color: #334155;
+}
+.book-description-description {
+  color: #475569;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .book-details-main-container {
+    min-width: 350px;
+  }
+  .book-details-card {
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .book-profile-description * {
+    margin: 3.5px auto;
+  }
+  .book-profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-profile-description {
+    text-align: center;
+    align-items: center;
+    padding: 23px 0px 0px 0px;
+    width: 100%;
+  }
+
+  .book-profile-description * {
+    font-size: 16px;
+  }
+  .book-profile-title {
+    font-size: 24px;
+  }
+  .book-description-head {
+    font-size: 16px;
+  }
+  .book-description-description {
+    font-size: 14px;
+  }
+  .horizontal-line {
+    margin: 15px 0px;
+  }
+  .star-icon {
+    margin: 0px 6px 0px 14px;
+  }
+}

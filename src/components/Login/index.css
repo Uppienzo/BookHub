@@ -25,31 +25,50 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   font-family: roboto;
   padding: 20px;
   background: #ffffff;
 }
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+.inputs-container {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+@media screen and (min-width: 470px) {
+  .inputs-container {
+    width: 80%;
+  }
+}
+
 .website-login-image {
-  height: 216px;
+  height: 230px;
   align-self: center;
 }
 .website-login-logo {
   height: 28px;
   align-self: center;
+  margin-top: 16px;
 }
 .label {
-  font-size: 16px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 17px;
   color: #5a7184;
+  margin: 23px 0px 3px 0px;
 }
 .input {
   background: #ffffff;
   border: 1px solid #c3cad9;
   border-radius: 8px;
-  padding: 8px;
-  margin-top: -18px;
+  padding: 10px;
   font-weight: 400;
   font-size: 14px;
   color: #183b56;
@@ -62,8 +81,9 @@
   border-radius: 7px;
   font-weight: 700;
   font-size: 16px;
-  padding: 10px;
+  padding: 9px;
   border-width: 0px;
+  margin-top: 30px;
 }
 
 .error-msg-para {
@@ -80,9 +100,10 @@
   }
   .form-container {
     width: 70%;
-    padding: 45px;
+    max-width: 350px;
+    padding: 40px;
     height: auto;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .website-login-image {
     display: none;
@@ -91,17 +112,21 @@
     display: inline;
     width: 50%;
   }
+  .inputs-container {
+    width: 110%;
+  }
   .input {
     margin-top: 0px;
   }
   .website-login-logo {
     height: 32px;
-    margin: 10px 0px 20px 0px;
+    margin: 5px 0px 35px 0px;
   }
   .label {
-    margin: 15px 0px 10px 0px;
+    font-size: 15px;
+    margin: 20px 0px 3px 0px;
   }
   .login-submit-button {
-    margin: 20px 0px;
+    margin: 30px 0px 5px 0px;
   }
 }

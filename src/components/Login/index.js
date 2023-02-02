@@ -44,42 +44,47 @@ class Login extends Component {
     const {username, password, isError, errorMessage} = this.state
     return (
       <form className="form-container" onSubmit={this.onPostLoginForm}>
-        <img
-          src="https://res.cloudinary.com/dh38irai9/image/upload/v1675064153/Ellipse_99_boz7hr.png"
-          alt="website login"
-          className="website-login-image"
-        />
-        <img
-          src="https://res.cloudinary.com/dh38irai9/image/upload/v1675064361/Group_7732_xv1vle.png"
-          alt="login website logo"
-          className="website-login-logo"
-        />
-        <label className="label" htmlFor="username">
-          Username*
-        </label>
-        <input
-          type="text"
-          id="username"
-          className="input"
-          placeholder="Enter Username"
-          value={username}
-          onChange={this.onChangeUsername}
-        />
-        <label className="label" htmlFor="password">
-          Password*
-        </label>
-        <input
-          type="password"
-          id="password"
-          className="input"
-          placeholder="Enter Password"
-          password={password}
-          onChange={this.onChangePassword}
-        />
-        {isError && <p className="error-msg-para"> {errorMessage} </p>}
-        <button type="submit" className="login-submit-button">
-          Login
-        </button>
+        <div className="logo-container">
+          <img
+            src="https://res.cloudinary.com/dh38irai9/image/upload/v1675064153/Ellipse_99_boz7hr.png"
+            alt="website login"
+            className="website-login-image"
+          />
+          <img
+            src="https://res.cloudinary.com/dh38irai9/image/upload/v1675064361/Group_7732_xv1vle.png"
+            alt="login website logo"
+            className="website-login-logo"
+          />
+        </div>
+
+        <div className="inputs-container">
+          <label className="label" htmlFor="username">
+            Username*
+          </label>
+          <input
+            type="text"
+            id="username"
+            className="input"
+            placeholder="Enter Username"
+            value={username}
+            onChange={this.onChangeUsername}
+          />
+          <label className="label" htmlFor="password">
+            Password*
+          </label>
+          <input
+            type="password"
+            id="password"
+            className="input"
+            placeholder="Enter Password"
+            password={password}
+            onChange={this.onChangePassword}
+          />
+          {isError && <p className="error-msg-para"> {errorMessage} </p>}
+          <button type="submit" className="login-submit-button">
+            Login
+          </button>
+        </div>
       </form>
     )
   }

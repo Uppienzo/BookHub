@@ -1,5 +1,6 @@
 .header-container {
   position: sticky;
+  width: 100%;
   z-index: 10;
   top: 0px;
   height: 11vh;
@@ -55,6 +56,10 @@
   .header-container {
     padding: 0px 20px;
     min-width: 350px;
+    height: 8.5vh;
+  }
+  .header-website-logo {
+    height: 23x;
   }
   .head-nav-bar {
     display: none;
@@ -92,7 +97,7 @@
   }
   .popup-box {
     min-width: 350px;
-    margin-top: 55px;
+    margin-top: 53px;
     width: 100vw;
     height: 100vh;
     background: #f8fafc;

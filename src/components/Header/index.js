@@ -94,7 +94,7 @@ const Header = props => {
           return (
             <Link to="/" className="styled-link" onClick={onClickLink}>
               <img
-                src="https://res.cloudinary.com/dh38irai9/image/upload/v1675064361/Group_7732_xv1vle.png"
+                src="https://res.cloudinary.com/dh38irai9/image/upload/v1675269848/Group_7732_1_x6q6aj.png"
                 alt="website logo"
                 className="header-website-logo"
               />

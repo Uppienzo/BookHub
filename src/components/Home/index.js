@@ -79,13 +79,6 @@ class Home extends Component {
   }
 
   render() {
-    const {apiStatus} = this.state
-    const {history} = this.props
-    const {location} = history
-    const {pathname} = location
-    const string = pathname.split('/')
-    console.log(string)
-    console.log(string[1])
     return (
       <div className="Home-container">
         <Header />
@@ -122,7 +115,7 @@ class Home extends Component {
             </div>
             {this.displayServerData()}
           </div>
-          {apiStatus === apiFetchConstantStates.success && <Footer />}
+          <Footer />
         </div>
       </div>
     )

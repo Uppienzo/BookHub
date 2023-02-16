@@ -14,7 +14,6 @@ const NavItem = props => {
         }
         const isActive = activeRoute === id
         const ActiveClassName = isActive ? 'active' : ''
-        console.log(isActive, activeRoute, id)
         return (
           <Link to={path} className="styled-link" onClick={routeChange}>
             <li className={`nav-item ${ActiveClassName}`}>

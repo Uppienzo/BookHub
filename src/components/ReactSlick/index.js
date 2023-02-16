@@ -41,12 +41,12 @@ const ReactSlick = props => {
   }
 
   return (
-    <div className="slider-container">
+    <ul className="slider-container">
       <Slider {...settings}>
         {books.map(eachBook => {
           const {id, coverPic, authorName, title} = eachBook
           return (
-            <Context.Consumer>
+            <Context.Consumer key={id}>
               {value => {
                 const {onChangeRoute} = value
                 const onClickLink = () => {
@@ -56,18 +56,17 @@ const ReactSlick = props => {
                   <Link
                     to={`/books/${id}`}
                     className="styled-link"
-                    key={id}
                     onClick={onClickLink}
                   >
-                    <div className="slick-item-container" key={id}>
+                    <li className="slick-item-container" key={id}>
                       <img
                         className="logo-image"
                         src={coverPic}
                         alt="company logo"
                       />
-                      <h1 className="slick-item-head">{authorName}</h1>
-                      <p className="slick-item-title">{title}</p>
-                    </div>
+                      <p className="slick-item-head">{authorName}</p>
+                      <h1 className="slick-item-title">{title}</h1>
+                    </li>
                   </Link>
                 )
               }}
@@ -75,7 +74,7 @@ const ReactSlick = props => {
           )
         })}
       </Slider>
-    </div>
+    </ul>
   )
 }
 

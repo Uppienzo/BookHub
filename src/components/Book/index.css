@@ -36,6 +36,7 @@
 }
 .rating-number {
   font-size: 14px;
+  margin: 0px;
 }
 .book-status {
   font-size: 12px;
@@ -51,7 +52,10 @@
   width: 40%;
   margin: 0px 25px 25px 0px;
 }
-
+.styled-link-book-item:hover {
+  background-color: rgba(153, 204, 255, 0.2);
+  border-radius: 8px;
+}
 @media screen and (max-width: 1000px) {
 }
 

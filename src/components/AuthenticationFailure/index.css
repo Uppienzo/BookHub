@@ -41,3 +41,9 @@
 }
 
 /* ccbp publish RJSCPNRHL4 uppibookhub.ccbp.tech  */
+
+/*  cd /home/workspace/.tmp/reactjs/coding-practices/bookHub && npm install && npx jest --clearCache && cd /home/workspace/reactjs/coding-practices/bookHub && rm -rf node_modules && npm install  */
+
+/*  cd .. && rm -rf bookHub && mkdir bookHub && cd bookHub && git clone https://github.com/Uppienzo/BookHub.git /home/workspace/reactjs/coding-practices/bookHub    */
+
+/*  cd .. && rm -rf nxtWatchApp && mkdir nxtWatchApp && cd nxtWatchApp && git clone {gir repository URL} /home/workspace/reactjs/coding-practices/nxtWatchApp  */

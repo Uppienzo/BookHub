@@ -51,6 +51,9 @@
   border: 2px solid red;
   background-color: white;
 }
+.menu {
+  display: none;
+}
 
 @media screen and (max-width: 767px) {
   .header-container {
@@ -72,6 +75,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+  .menu {
+    display: none;
   }
   .nav-item {
     margin: 10px;

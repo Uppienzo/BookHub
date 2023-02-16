@@ -76,7 +76,7 @@ class BookDetails extends Component {
             <span className="rating-profile-number"> {rating} </span>
           </p>
           <p className="book-profile-status">
-            Status :{' '}
+            Status:{' '}
             <span className="book-profile-status-highlight">{readStatus}</span>
           </p>
         </div>

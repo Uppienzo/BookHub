@@ -1,6 +1,6 @@
 import './index.css'
-import Popup from 'reactjs-popup'
 import {HiOutlineMenu} from 'react-icons/hi'
+import Popup from 'reactjs-popup'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {Link, withRouter} from 'react-router-dom'
 import Cookies from 'js-cookie'
@@ -42,7 +42,8 @@ const Header = props => {
   )
 
   const reactPopUp = () => (
-    <div className="popup-container">
+    <>
+      <HiOutlineMenu className="menu" />
       <Popup
         modal
         trigger={
@@ -81,7 +82,7 @@ const Header = props => {
           </>
         )}
       </Popup>
-    </div>
+    </>
   )
   return (
     <div className="header-container">
@@ -102,8 +103,8 @@ const Header = props => {
           )
         }}
       </Context.Consumer>
-
       <HeadNavBar />
+
       {reactPopUp()}
     </div>
   )

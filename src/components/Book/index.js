@@ -36,8 +36,8 @@ const Book = props => {
                   <span className="rating-number"> {rating} </span>
                 </p>
                 <p className="book-status">
-                  Status :{' '}
-                  <span className="book-status-highlight">{readStatus}</span>
+                  Status:
+                  <span className="book-status-highlight"> {readStatus}</span>
                 </p>
               </div>
             </li>
